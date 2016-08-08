@@ -154,6 +154,7 @@ class GameACFFNetwork(GameACNetwork):
   def get_vars(self):
     return [self.W_conv1, self.b_conv1,
             self.W_conv2, self.b_conv2,
+            self.W_conv3, self.b_conv3,
             self.W_fc1, self.b_fc1,
             self.W_fc2, self.b_fc2,
             self.W_fc3, self.b_fc3]
@@ -280,7 +281,9 @@ class GameACLSTMNetwork(GameACNetwork):
   def get_vars(self):
     return [self.W_conv1, self.b_conv1,
             self.W_conv2, self.b_conv2,
+            self.W_conv3, self.b_conv3,
             self.W_fc1, self.b_fc1,
             self.lstm.matrix, self.lstm.bias,
             self.W_fc2, self.b_fc2,
-            self.W_fc3, self.b_fc3]
+            self.W_fc3, self.b_fc3,
+            self.W_fc4, self.b_fc4]
